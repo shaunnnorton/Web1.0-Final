@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shaun Norton - Final - Web1.0</title>
+</head>
+<body>
+    <section id="input-section">
+        <div id="student-info">
+            <h1>Shaun Norton</h1>
+            <p>My favorite color is purple and I wear Nike.</p>
+        </div>
+        <div id="data-input">
+            <h1>Font Styler</h1>
+            <label>
+                Font Size
+                <input type="number" id="input-size" value='16'>
+            </label>
+            <label>
+                Font Family
+                <select name="font-family" id="select-font">
+                    <option value="Helvetic">Helvetic</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Times-New-Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+            </label>
+            <label>
+                Font Color
+                <input id="input-color" type="color" value="#000">
+            </label>
+            <label>
+                Background Color
+                <input type="color" id="input-bg-color" value="#fff">
+            </label>
+            <label>
+                Enter Text
+                <textarea name="EnterText" id="enter-text">Sample Text</textarea>
+            </label>
+            <label id="font-weight">
+                Font Weight
+                <select name="font-weight" id="select-weight">
+                    <option value="bold">Bold</option>
+                    <option value="bolder">Bolder</option>
+                    <option value="normal">Normal</option>
+                    <option value="lighter">Lighter</option>
+                </select>
+            </label>
+            <label id="font-style">
+                Font Style
+                <select name="font-style" id="select-style">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic </option>
+                    <option value="oblique">Qblique</option>
+                </select>
+            </label>
+            <label id="letter-spacing">
+                Letter Spacing
+                <input type="number" value="1" id="input-spacing">
+            </label>
+            <label id="padding">
+                Padding
+                <input type="number" id='input-padding' value='1'>
+            </label>
+        </div>
+    </section>
+    <section id="output-section">
+        <div id="headline-display">
+            <h1 id='display'>Sample Text</h1>
+        </div>
+        <div id="data-output">
+            <h1>Font Settings</h1>
+            <pre><code>
+<!--    --> .headline {
+<!--    -->     font-size: <span id="show-size">16</span>px;
+<!--    -->     font-family: <span id="show-font">Times</span>;
+<!--    -->     color: <span id="show-color">#000</span>;
+<!--    -->     background-color: <span id="show-bg-color">#fff</span>;
+<!--    -->     font-weight: <span id="show-weight">bold</span>;
+<!--    -->     font-style: <span id="show-style">normal</span>;
+<!--    -->     letter-spacing: <span id="show-spacing">1</span>px;
+<!--    -->     padding: <span id="show-padding">0</span>px;
+
+<!--    --> }</code></pre>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
